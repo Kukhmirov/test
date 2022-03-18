@@ -1,1 +1,1 @@
-[visual](kukhmirov.github.io/invest/src/)
+[visual](https://kukhmirov.github.io/invest/src/)

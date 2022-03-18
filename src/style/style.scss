@@ -1,0 +1,19 @@
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.container
+{
+    max-width: 960px;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+@import './header';
+@import './main';
+@import './footer';
+@import './media';
+@import './modal';

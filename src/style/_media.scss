@@ -19,6 +19,16 @@
 }
 @media (max-width: 660px)
 {
+    .modal
+    {
+        &__wrapper
+        {
+            span
+            {
+                right: 10px;
+            }
+        }
+    }
     .head
     {
         &__wrapper

@@ -1,0 +1,105 @@
+.main
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+    &__wrapper
+    {
+        width: 100%;
+        min-height: 100%;
+        display: flex;
+        gap: 20px;
+        &::after
+        {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            height: 1px;
+            width: 100%;
+            background:rgb(105, 105, 105);
+        }
+    }
+    &__left
+    {
+        width: 200px;
+        min-height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__img
+    {
+        height: 200px;
+        display: flex;
+        img
+        {
+            height: 100%;
+            margin: 0 auto;
+        }
+    }
+    &__menu
+    {
+        height: 250px;
+        background: rgb(110, 110, 110);
+    }
+    &__submenu
+    {
+        height: 200px;
+        background: rgb(110, 110, 110);
+    }
+
+    &__right
+    {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 20px;
+    }
+    &__header
+    {
+        width: 100%;
+        height: 250px;
+        background: rgb(150, 150, 150);
+    }
+    &__items
+    {
+        ul
+        {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+            gap: 20px;
+            list-style: none;
+            .item
+            {
+                position: relative;
+                margin: 0 auto;
+                height: 130px;
+                width: 130px;
+                cursor: pointer;
+                img
+                {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+    &__footer
+    {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        img
+        {
+            height: 200px;
+            margin: 0 auto;
+            cursor: pointer;
+        }
+    }
+    &__descr
+    {
+        background: rgb(150, 150, 150);
+    }
+}
